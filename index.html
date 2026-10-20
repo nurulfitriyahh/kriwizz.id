@@ -1,0 +1,1050 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kriwuzz Crispy - Keripik Pangsit Renyah Tangerang Selatan</title>
+    <meta
+      name="description"
+      content="Kriwuzz Crispy adalah camilan kulit pangsit renyah dengan varian rasa Balado, BBQ, dan Pedas Daun Jeruk. Beli keripik pangsit crispy di Tangerang Selatan sekarang!"
+    />
+    <meta
+      name="keywords"
+      content="keripik pangsit, snack pedas, keripik pangsit crispy aneka rasa, beli keripik pangsit crispy di Tangerang Selatan, Kriwuzz Crispy"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandPrimary: "#DC2626",
+              brandDark: "#111827",
+              brandBg: "#FFFFFF",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Animasi Keripik Melayang Background */
+      @keyframes float-1 {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-22px) rotate(15deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+      @keyframes float-2 {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(24px) rotate(-18deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+      @keyframes float-3 {
+        0% {
+          transform: translateY(0px) rotate(0deg) scale(1);
+        }
+        50% {
+          transform: translateY(-16px) rotate(10deg) scale(1.08);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg) scale(1);
+        }
+      }
+      @keyframes float-4 {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-18px) rotate(-12deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+
+      .chip-floating-1 {
+        animation: float-1 5s ease-in-out infinite;
+      }
+      .chip-floating-2 {
+        animation: float-2 6.5s ease-in-out infinite;
+      }
+      .chip-floating-3 {
+        animation: float-3 4.5s ease-in-out infinite;
+      }
+      .chip-floating-4 {
+        animation: float-4 5.8s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <!-- Top Info Bar -->
+    <div class="bg-gray-900 text-white text-xs py-2 px-4">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2"
+      >
+        <div class="flex items-center gap-4">
+          <span
+            ><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>
+            Tangerang Selatan, Banten</span
+          >
+          <span
+            ><i class="fa-solid fa-clock text-amber-400 mr-1"></i> Buka 08:00 -
+            21:00 WIB</span
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="mailto:hello@kriwuzz.id" class="hover:underline"
+            ><i class="fa-solid fa-envelope text-red-400 mr-1"></i>
+            hello@kriwuzz.id</a
+          >
+          <a
+            href="https://wa.me/6285743997603"
+            target="_blank"
+            class="hover:underline font-semibold text-green-400"
+            ><i class="fa-brands fa-whatsapp mr-1"></i> 085743997603</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Navigation Transparan -->
+    <header
+      class="sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm border-b border-gray-200/50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-2">
+          <div
+            class="bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-extrabold text-xl shadow-md"
+          >
+            K
+          </div>
+          <div>
+            <span class="text-xl font-extrabold text-red-600 tracking-tight"
+              >Kriwuzz</span
+            >
+            <span class="text-xl font-extrabold text-amber-500">Crispy</span>
+            <p class="text-[10px] text-gray-400 font-medium -mt-1">
+              Rasa Bikin Nagih!
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden md:flex items-center gap-6 font-semibold text-sm text-gray-700"
+        >
+          <a href="#home" class="hover:text-red-600 transition">Beranda</a>
+          <a href="#menu" class="hover:text-red-600 transition">Menu Produk</a>
+          <a href="#tentang" class="hover:text-red-600 transition"
+            >Tentang Kami</a
+          >
+          <a href="#lokasi" class="hover:text-red-600 transition"
+            >Lokasi & Maps</a
+          >
+          <a href="#artikel" class="hover:text-red-600 transition"
+            >Artikel SEO</a
+          >
+        </nav>
+
+        <!-- CTA Order Header -->
+        <div class="flex items-center gap-3">
+          <button
+            onclick="toggleCartModal()"
+            class="relative bg-red-500/10 text-red-600 p-2.5 rounded-full hover:bg-red-500/20 transition"
+          >
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+            <span
+              id="cartCountBadge"
+              class="absolute -top-1 -right-1 bg-red-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white"
+              >0</span
+            >
+          </button>
+          <a
+            href="#menu"
+            class="hidden sm:inline-block bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-4 py-2.5 rounded-full shadow transition"
+          >
+            <i class="fa-solid fa-bag-shopping mr-1"></i> Pesan Sekarang
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Transparan dengan Gradient Lembut & Keripik Melayang -->
+    <section
+      id="home"
+      class="relative bg-gradient-to-br from-red-50/40 via-amber-50/30 to-white/60 py-16 md:py-24 overflow-hidden border-b border-gray-200/50 backdrop-blur-sm"
+    >
+      <!-- DEKORASI LATAR BELAKANG: Keripik Pangsit Melayang Transparan & Elegan -->
+      <div
+        class="absolute inset-0 pointer-events-none overflow-hidden z-0 opacity-40"
+      >
+        <!-- Keripik Floating 1 -->
+        <div
+          class="absolute top-10 left-5 md:left-16 w-24 h-24 sm:w-32 sm:h-32 rounded-3xl overflow-hidden shadow-2xl border border-white/60 backdrop-blur-sm chip-floating-1 transform -rotate-12"
+        >
+          <img
+            src="https://assets.pikiran-rakyat.com/crop/18x746:1075x1367/750x500/photo/2022/12/24/1972661548.jpg"
+            alt="Keripik Melayang 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Keripik Floating 2 -->
+        <div
+          class="absolute bottom-10 left-1/3 w-20 h-20 sm:w-28 sm:h-28 rounded-3xl overflow-hidden shadow-2xl border border-white/60 backdrop-blur-sm chip-floating-2 transform rotate-45"
+        >
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.e0yzPBEyDHmIDuMOgk3xlgHaFP?r=0&pid=Api&h=220&P=0"
+            alt="Keripik Melayang 2"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Keripik Floating 3 -->
+        <div
+          class="absolute top-1/4 right-8 md:right-20 w-28 h-28 sm:w-36 sm:h-36 rounded-3xl overflow-hidden shadow-2xl border border-white/60 backdrop-blur-sm chip-floating-3 transform rotate-12"
+        >
+          <img
+            src="https://down-id.img.susercontent.com/file/id-11134207-7quky-lk4u7ta5urerb1"
+            alt="Keripik Melayang 3"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Keripik Floating 4 -->
+        <div
+          class="absolute bottom-8 right-1/4 w-20 h-20 sm:w-24 sm:h-24 rounded-3xl overflow-hidden shadow-xl border border-white/60 backdrop-blur-sm chip-floating-4 transform -rotate-45"
+        >
+          <img
+            src="https://assets.pikiran-rakyat.com/crop/18x746:1075x1367/750x500/photo/2022/12/24/1972661548.jpg"
+            alt="Keripik Melayang 4"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Glow Accents Transparan -->
+        <div
+          class="absolute -top-24 -left-24 w-96 h-96 bg-red-400/20 rounded-full filter blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full filter blur-3xl"
+        ></div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Teks Hero dengan Card Transparan -->
+        <div
+          class="bg-white/60 backdrop-blur-md p-6 sm:p-8 rounded-3xl border border-white/80 shadow-xl"
+        >
+          <span
+            class="bg-red-500/10 text-red-600 text-xs font-bold px-3 py-1 rounded-full border border-red-200/50 uppercase tracking-wider inline-block mb-3"
+          >
+            <i class="fa-solid fa-fire mr-1 text-red-500"></i> Camilan Kulit
+            Pangsit No. 1 Tangerang Selatan
+          </span>
+          <h1
+            class="text-3xl sm:text-5xl font-black leading-tight mb-4 text-gray-900"
+          >
+            Kriwuzz Crispy <br />
+            <span class="text-red-600">Renyah & Gurih Bumbu Melimpah!</span>
+          </h1>
+          <p class="text-gray-700 text-sm sm:text-base mb-6 leading-relaxed">
+            Nikmati sensasi keripik pangsit super renyah dengan balutan bumbu
+            pilihan khas Balado, BBQ, dan Pedas Daun Jeruk. Pilihan sempurna
+            untuk teman bersantai maupun teman belajar kamu!
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="#menu"
+              class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm px-6 py-3 rounded-full shadow-lg transition transform hover:-translate-y-0.5"
+            >
+              <i class="fa-solid fa-utensils mr-2"></i> Lihat Menu Produk
+            </a>
+            <a
+              href="https://wa.me/6285743997603?text=Halo%20Kriwuzz%20Crispy,%20saya%20mau%20tanya%20produk"
+              target="_blank"
+              class="bg-green-600 hover:bg-green-700 text-white font-bold text-sm px-6 py-3 rounded-full shadow-lg transition flex items-center gap-2"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i> Chat WhatsApp
+              (085743997603)
+            </a>
+          </div>
+        </div>
+
+        <!-- Foto Utama Banner dengan SLIDER/CAROUSEL Transparan -->
+        <div class="relative flex justify-center">
+          <div
+            class="relative w-full max-w-md bg-white/40 backdrop-blur-md p-3 rounded-3xl shadow-2xl border border-white/80"
+          >
+            <!-- Container Slider Gambar -->
+            <div
+              class="relative w-full h-80 sm:h-96 overflow-hidden rounded-2xl group shadow-inner"
+            >
+              <!-- Slide 1 -->
+              <div
+                class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-100"
+              >
+                <img
+                  src="https://assets.pikiran-rakyat.com/crop/18x746:1075x1367/750x500/photo/2022/12/24/1972661548.jpg"
+                  alt="Keripik Pangsit Balado"
+                  class="w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-red-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1 rounded-full shadow"
+                  >Varian Balado</span
+                >
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none"
+              >
+                <img
+                  src="https://tse3.mm.bing.net/th/id/OIP.e0yzPBEyDHmIDuMOgk3xlgHaFP?r=0&pid=Api&h=220&P=0"
+                  alt="Keripik Pangsit BBQ"
+                  class="w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-amber-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1 rounded-full shadow"
+                  >Varian BBQ</span
+                >
+              </div>
+
+              <!-- Slide 3 -->
+              <div
+                class="hero-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none"
+              >
+                <img
+                  src="https://down-id.img.susercontent.com/file/id-11134207-7quky-lk4u7ta5urerb1"
+                  alt="Keripik Pangsit Pedas Daun Jeruk"
+                  class="w-full h-full object-cover"
+                />
+                <span
+                  class="absolute top-3 left-3 bg-green-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1 rounded-full shadow"
+                  >Pedas Daun Jeruk</span
+                >
+              </div>
+
+              <!-- Tombol Navigasi Manual Slider Transparan -->
+              <button
+                onclick="prevSlide()"
+                class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 backdrop-blur-sm text-white w-8 h-8 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fa-solid fa-chevron-left text-xs"></i>
+              </button>
+              <button
+                onclick="nextSlide()"
+                class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 backdrop-blur-sm text-white w-8 h-8 rounded-full flex items-center justify-center transition"
+              >
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+
+              <!-- Indicator Dots -->
+              <div
+                class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10"
+              >
+                <button
+                  onclick="goToSlide(0)"
+                  class="slide-dot w-2.5 h-2.5 rounded-full bg-white"
+                ></button>
+                <button
+                  onclick="goToSlide(1)"
+                  class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50"
+                ></button>
+                <button
+                  onclick="goToSlide(2)"
+                  class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50"
+                ></button>
+              </div>
+            </div>
+
+            <!-- Rating Badge Overlay Transparan -->
+            <div
+              class="absolute -bottom-4 -left-4 bg-white/80 backdrop-blur-md text-gray-800 p-3 rounded-2xl shadow-xl flex items-center gap-3 border border-white/80 z-20"
+            >
+              <div class="bg-amber-100/80 p-2 rounded-xl text-amber-600">
+                <i class="fa-solid fa-star text-yellow-500 text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-sm text-gray-900">Rating 4.8 / 5.0</p>
+                <p class="text-xs text-gray-500">124 Ulasan Google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Produk Section -->
+    <section
+      id="menu"
+      class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white"
+    >
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-red-600 font-bold text-xs uppercase tracking-widest"
+          >Pilihan Rasa Terfavorit</span
+        >
+        <h2 class="text-3xl font-extrabold text-gray-900 mt-1">
+          Menu Produk Kriwuzz Crispy
+        </h2>
+        <p class="text-gray-600 text-sm mt-2">
+          Dibuat dari bahan pilihan berkualitas, digoreng garing sempurna dengan
+          taburan bumbu racikan melimpah.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Produk 1: Keripik Pangsit Balado -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div class="relative h-64 overflow-hidden bg-gray-100">
+              <img
+                src="https://assets.pikiran-rakyat.com/crop/18x746:1075x1367/750x500/photo/2022/12/24/1972661548.jpg"
+                alt="Keripik Pangsit Balado"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute top-3 right-3 bg-red-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow"
+                >Favorit</span
+              >
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-bold text-gray-900">
+                  Keripik Pangsit Balado
+                </h3>
+                <span class="text-red-600 font-extrabold text-lg"
+                  >Rp 12.000</span
+                >
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                Perpaduan manis, gurih, dan pedas khas bumbu Balado yang meresap
+                sempurna di setiap lembaran keripik pangsit renyah.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <button
+              onclick="addToCart('Keripik Pangsit Balado', 12000)"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm py-2.5 rounded-xl shadow transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk 2: Keripik Pangsit BBQ -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div class="relative h-64 overflow-hidden bg-gray-100">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.e0yzPBEyDHmIDuMOgk3xlgHaFP?r=0&pid=Api&h=220&P=0"
+                alt="Keripik Pangsit BBQ"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-bold text-gray-900">
+                  Keripik Pangsit BBQ
+                </h3>
+                <span class="text-red-600 font-extrabold text-lg"
+                  >Rp 12.000</span
+                >
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                Aroma asap istimewa dengan rasa manis gurih ala Barbeque
+                premium. Sangat diminati anak muda dan keluarga.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <button
+              onclick="addToCart('Keripik Pangsit BBQ', 12000)"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm py-2.5 rounded-xl shadow transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk 3: Keripik Pangsit Pedas Daun Jeruk -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between"
+        >
+          <div>
+            <div class="relative h-64 overflow-hidden bg-gray-100">
+              <img
+                src="https://down-id.img.susercontent.com/file/id-11134207-7quky-lk4u7ta5urerb1"
+                alt="Keripik Pangsit Pedas Daun Jeruk"
+                class="w-full h-full object-cover hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute top-3 right-3 bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow"
+                >Best Seller</span
+              >
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-lg font-bold text-gray-900">
+                  Keripik Pangsit Pedas Daun Jeruk
+                </h3>
+                <span class="text-red-600 font-extrabold text-lg"
+                  >Rp 12.000</span
+                >
+              </div>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">
+                Rasa pedas membakar dipadu wangi segar irisan daun jeruk asli.
+                Sensasi rasa gurih segar yang bikin ketagihan!
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <button
+              onclick="addToCart('Keripik Pangsit Pedas Daun Jeruk', 12000)"
+              class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm py-2.5 rounded-xl shadow transition flex items-center justify-center gap-2"
+            >
+              <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-16 bg-gray-50 border-y border-gray-100">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <span class="text-red-600 font-bold text-xs uppercase tracking-widest"
+            >Mengenal Kriwuzz Crispy</span
+          >
+          <h2 class="text-3xl font-extrabold text-gray-900 mt-1 mb-4">
+            Camilan Kulit Pangsit Renyah Khas Tangerang Selatan
+          </h2>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <strong>Kriwuzz Crispy</strong> merupakan brand usaha camilan lokal
+            yang menghadirkan kreasi olahan kulit pangsit berkualitas dengan
+            tekstur garing ekstra renyah.
+          </p>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">
+            Dikemas secara praktis dan higienis, Kriwuzz Crispy siap menemani
+            waktu santai, jam belajar, hingga momen kumpul bersama teman dan
+            keluarga.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm"
+            >
+              <i
+                class="fa-solid fa-shield-halved text-red-600 text-2xl mb-2"
+              ></i>
+              <h4 class="font-bold text-sm text-gray-900">Kualitas Terjamin</h4>
+              <p class="text-xs text-gray-500 mt-1">
+                Bahan segar & tanpa bahan pengawet berbahaya.
+              </p>
+            </div>
+            <div
+              class="p-4 bg-white rounded-2xl border border-gray-200 shadow-sm"
+            >
+              <i
+                class="fa-solid fa-truck-fast text-amber-500 text-2xl mb-2"
+              ></i>
+              <h4 class="font-bold text-sm text-gray-900">Pengiriman Cepat</h4>
+              <p class="text-xs text-gray-500 mt-1">
+                Melayani area Tangerang Selatan & sekitarnya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="https://down-id.img.susercontent.com/file/id-11134207-7quky-lk4u7ta5urerb1"
+            alt="Foto Camilan Kriwuzz"
+            class="rounded-3xl shadow-lg w-full max-w-md object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Business Profile Simulation & Live Google Maps Embed Section -->
+    <section id="lokasi" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-red-600 font-bold text-xs uppercase tracking-widest"
+          >Local SEO & Peta Lokasi</span
+        >
+        <h2 class="text-3xl font-extrabold text-gray-900 mt-1">
+          Lokasi & Profil Bisnis Kami
+        </h2>
+        <p class="text-gray-600 text-sm mt-2">
+          Temukan lokasi Kriwuzz Crispy di area Tangerang Selatan.
+        </p>
+      </div>
+
+      <div
+        class="max-w-5xl mx-auto bg-white rounded-3xl border border-gray-200 shadow-xl overflow-hidden p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8"
+      >
+        <!-- Profil Toko -->
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <div
+              class="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow"
+            >
+              KC
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-gray-900">
+                Kriwuzz Crispy - Tangerang Selatan
+              </h3>
+              <p class="text-xs text-gray-500">Toko Makanan Ringan</p>
+              <div class="flex items-center gap-2 mt-1">
+                <span class="text-red-600 font-bold text-sm">4.8</span>
+                <div class="text-yellow-400 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-xs text-gray-500">(124 Ulasan Google)</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-gray-100" />
+
+          <div class="space-y-3 text-xs text-gray-600">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-red-600 w-4"></i>
+              <span>Tangerang Selatan, Banten (Target Pasar Lokal)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-green-600 w-4"></i>
+              <span class="font-bold text-gray-800">085743997603</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-amber-600 w-4"></i>
+              <span>hello@kriwuzz.id</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-globe text-blue-500 w-4"></i>
+              <span>www.kriwuzz.id</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a
+              href="https://wa.me/6285743997603"
+              target="_blank"
+              class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow transition"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Hubungi Toko via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Peta Google Maps Interaktif -->
+        <div
+          class="w-full h-64 md:h-full min-h-[250px] rounded-2xl overflow-hidden border border-gray-200 shadow-inner"
+        >
+          <iframe
+            title="Peta Lokasi Kriwuzz Crispy Tangerang Selatan"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126881.52528766113!2d106.64731388960012!3d-6.300649989422557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb2193b2a2e5%3A0xb30e0149022634e2!2sSouth%20Tangerang%20City%2C%20Banten!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artikel SEO Section -->
+    <section id="artikel" class="py-16 bg-gray-50 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-red-600 font-bold text-xs uppercase tracking-widest"
+            >Informasi & Edukasi</span
+          >
+          <h2 class="text-3xl font-extrabold text-gray-900 mt-1">
+            Artikel & Panduan Kuliner
+          </h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Seputar kelezatan keripik pangsit crispy dan tips memilih camilan.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Artikel 1 -->
+          <article
+            class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition"
+          >
+            <span
+              class="text-[10px] font-bold text-red-600 bg-red-50 px-2.5 py-1 rounded-full uppercase"
+              >keripik pangsit crispy</span
+            >
+            <h3 class="text-base font-bold text-gray-900 mt-3 mb-2">
+              Keripik Pangsit Crispy: Camilan Renyah dengan Pilihan Rasa
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Mengapa keripik pangsit memiliki tekstur garing sempurna?
+              Rahasianya ada pada bahan kulit berkualitas dan teknik
+              penggorengan suhu tepat. Nikmati pilihan rasa Balado, BBQ, dan
+              Pedas Daun Jeruk.
+            </p>
+          </article>
+
+          <!-- Artikel 2 -->
+          <article
+            class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition"
+          >
+            <span
+              class="text-[10px] font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full uppercase"
+              >camilan pedas untuk teman belajar</span
+            >
+            <h3 class="text-base font-bold text-gray-900 mt-3 mb-2">
+              Camilan Pedas untuk Teman Belajar: Tips Memilih Snack Praktis
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Belajar butuh fokus dan semangat! Pilih camilan praktis dengan
+              kemasan higienis yang tidak mengotori tangan. Keripik pangsit
+              pedas daun jeruk jadi pilihan tepat pembakar semangat!
+            </p>
+          </article>
+
+          <!-- Artikel 3 -->
+          <article
+            class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition"
+          >
+            <span
+              class="text-[10px] font-bold text-green-700 bg-green-50 px-2.5 py-1 rounded-full uppercase"
+              >beli keripik pangsit crispy di Tangerang Selatan</span
+            >
+            <h3 class="text-base font-bold text-gray-900 mt-3 mb-2">
+              Beli Keripik Pangsit Crispy di Tangerang Selatan: Panduan
+              Pemesanan
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Mencari snack kemasan lezat di area Tangerang Selatan? Perhatikan
+              komposisi, tanggal kedaluwarsa, serta layanan pengiriman langsung
+              dari Kriwuzz Crispy via WhatsApp.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <div
+              class="bg-red-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-extrabold text-base"
+            >
+              K
+            </div>
+            <span class="text-xl font-extrabold text-white"
+              >Kriwuzz <span class="text-amber-500">Crispy</span></span
+            >
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed max-w-sm mb-4">
+            Kriwuzz Crispy adalah brand camilan kulit pangsit renyah dengan rasa
+            garing dan gurih bikin nagih. Siap kirim area Tangerang Selatan dan
+            sekitarnya.
+          </p>
+          <p class="text-xs text-gray-500">
+            &copy; 2026 Kriwuzz Crispy (Nurul Fitriyah - NIM 231011700965). All
+            rights reserved.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Kontak Resmi</h4>
+          <ul class="space-y-2 text-xs text-gray-400">
+            <li>
+              <i class="fa-solid fa-envelope text-red-500 mr-2"></i>
+              hello@kriwuzz.id
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp text-green-400 mr-2"></i>
+              085743997603
+            </li>
+            <li>
+              <i class="fa-solid fa-globe text-blue-400 mr-2"></i>
+              www.kriwuzz.id
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot text-red-500 mr-2"></i>
+              Tangerang Selatan, Banten
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-3">Jam Operasional</h4>
+          <p class="text-xs text-gray-400">Senin - Minggu</p>
+          <p class="text-sm font-bold text-amber-400 mt-1">08.00 - 21.00 WIB</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Keranjang Belanja -->
+    <div
+      id="cartModal"
+      class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto"
+      >
+        <button
+          onclick="toggleCartModal()"
+          class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h3
+          class="text-xl font-extrabold text-gray-900 mb-4 flex items-center gap-2"
+        >
+          <i class="fa-solid fa-cart-shopping text-red-600"></i> Keranjang
+          Belanja
+        </h3>
+
+        <div id="cartItemsList" class="space-y-3 mb-6"></div>
+
+        <div class="border-t border-gray-100 pt-4 space-y-3">
+          <div class="flex justify-between font-bold text-base text-gray-900">
+            <span>Total Pembayaran:</span>
+            <span id="cartTotalPrice" class="text-red-600">Rp 0</span>
+          </div>
+
+          <div class="space-y-2 text-xs pt-2">
+            <label class="block font-semibold text-gray-700"
+              >Nama Pemesan:</label
+            >
+            <input
+              type="text"
+              id="buyerName"
+              placeholder="Masukkan nama Anda"
+              class="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500"
+            />
+
+            <label class="block font-semibold text-gray-700 mt-2"
+              >Alamat Pengiriman (Tangerang Selatan & Sekitarnya):</label
+            >
+            <textarea
+              id="buyerAddress"
+              rows="2"
+              placeholder="Masukkan alamat lengkap pengiriman"
+              class="w-full px-3 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500"
+            ></textarea>
+          </div>
+
+          <button
+            onclick="checkoutToWhatsApp()"
+            class="w-full bg-green-600 hover:bg-green-700 text-white font-bold text-sm py-3 rounded-xl shadow transition flex items-center justify-center gap-2 mt-4"
+          >
+            <i class="fa-brands fa-whatsapp text-lg"></i> Kirim Pesanan via
+            WhatsApp (085743997603)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+      // Logika Keranjang Belanja
+      let cart = {};
+
+      function addToCart(name, price) {
+        if (cart[name]) {
+          cart[name].qty += 1;
+        } else {
+          cart[name] = { price: price, qty: 1 };
+        }
+        updateCartUI();
+        alert(name + " berhasil ditambahkan ke keranjang!");
+      }
+
+      function updateQuantity(name, change) {
+        if (cart[name]) {
+          cart[name].qty += change;
+          if (cart[name].qty <= 0) {
+            delete cart[name];
+          }
+        }
+        updateCartUI();
+      }
+
+      function updateCartUI() {
+        const listContainer = document.getElementById("cartItemsList");
+        const totalContainer = document.getElementById("cartTotalPrice");
+        const badgeCount = document.getElementById("cartCountBadge");
+
+        listContainer.innerHTML = "";
+        let total = 0;
+        let count = 0;
+
+        const keys = Object.keys(cart);
+        if (keys.length === 0) {
+          listContainer.innerHTML =
+            '<p class="text-xs text-gray-500 text-center py-4">Keranjang belanja masih kosong.</p>';
+        } else {
+          keys.forEach((name) => {
+            const item = cart[name];
+            const subtotal = item.price * item.qty;
+            total += subtotal;
+            count += item.qty;
+
+            const itemEl = document.createElement("div");
+            itemEl.className =
+              "flex justify-between items-center bg-gray-50 p-3 rounded-xl text-xs border border-gray-200";
+            itemEl.innerHTML = `
+                        <div>
+                            <p class="font-bold text-gray-800">${name}</p>
+                            <p class="text-gray-500">Rp ${item.price.toLocaleString("id-ID")} x ${item.qty}</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="updateQuantity('${name}', -1)" class="w-6 h-6 bg-white text-gray-700 font-bold rounded shadow flex items-center justify-center border">-</button>
+                            <span class="font-bold text-gray-800">${item.qty}</span>
+                            <button onclick="updateQuantity('${name}', 1)" class="w-6 h-6 bg-white text-gray-700 font-bold rounded shadow flex items-center justify-center border">+</button>
+                        </div>
+                    `;
+            listContainer.appendChild(itemEl);
+          });
+        }
+
+        totalContainer.innerText = "Rp " + total.toLocaleString("id-ID");
+        badgeCount.innerText = count;
+      }
+
+      function toggleCartModal() {
+        const modal = document.getElementById("cartModal");
+        modal.classList.toggle("hidden");
+      }
+
+      function checkoutToWhatsApp() {
+        const keys = Object.keys(cart);
+        if (keys.length === 0) {
+          alert("Keranjang belanja Anda masih kosong!");
+          return;
+        }
+
+        const name = document.getElementById("buyerName").value.trim();
+        const address = document.getElementById("buyerAddress").value.trim();
+
+        if (!name || !address) {
+          alert(
+            "Harap isi Nama Pemesan dan Alamat Pengiriman terlebih dahulu!",
+          );
+          return;
+        }
+
+        let message = `Halo Kriwuzz Crispy, saya mau pesan:\n\n`;
+        let total = 0;
+
+        keys.forEach((item) => {
+          const subtotal = cart[item].price * cart[item].qty;
+          total += subtotal;
+          message += `- ${item} (${cart[item].qty}x) = Rp ${subtotal.toLocaleString("id-ID")}\n`;
+        });
+
+        message += `\n*Total:* Rp ${total.toLocaleString("id-ID")}\n\n`;
+        message += `*Nama:* ${name}\n`;
+        message += `*Alamat:* ${address}\n\n`;
+        message += `Mohon diproses ya, terima kasih!`;
+
+        const encodedMessage = encodeURIComponent(message);
+        window.open(
+          `https://wa.me/6285743997603?text=${encodedMessage}`,
+          "_blank",
+        );
+      }
+
+      // LOGIKA SLIDER HERO BANNER
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".hero-slide");
+      const dots = document.querySelectorAll(".slide-dot");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove("opacity-0", "pointer-events-none");
+            slide.classList.add("opacity-100");
+          } else {
+            slide.classList.remove("opacity-100");
+            slide.classList.add("opacity-0", "pointer-events-none");
+          }
+        });
+
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.remove("bg-white/50");
+            dot.classList.add("bg-white");
+          } else {
+            dot.classList.remove("bg-white");
+            dot.classList.add("bg-white/50");
+          }
+        });
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        let next = (currentSlide + 1) % slides.length;
+        showSlide(next);
+      }
+
+      function prevSlide() {
+        let prev = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prev);
+      }
+
+      function goToSlide(index) {
+        showSlide(index);
+      }
+
+      // Slide berganti otomatis setiap 3.5 detik
+      setInterval(nextSlide, 3500);
+    </script>
+  </body>
+</html>
